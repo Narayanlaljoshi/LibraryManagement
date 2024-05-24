@@ -25,7 +25,7 @@ namespace LibraryManagement.Controllers
         }
 
         [HttpPost]
-        [Route("AddAuthor")]
+        [Route("ListAllAuthors")]
         public Task<Response> ListAllAuthors(CancellationToken cancellationToken)
         {
             return _authorService.ListAllAuthors(cancellationToken);
